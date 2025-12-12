@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import TTTButton from './App';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+
 root.render(
   <React.StrictMode>
-    <TTTButton tekst='test tekkst' onClick={(): void => { alert("test1"); alert("test2") }} />
+    <App />
   </React.StrictMode>
 );
 

@@ -1,0 +1,50 @@
+.start-stop {
+  width: 100px;
+  border-radius: 50px;
+}
+
+.reference-node {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.IF-node-wrapper {
+  width: 140px;
+  height: 140px;
+  background-color: white;
+
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.IF-node {
+  width: 80px;
+  height: 80px;
+  transform: rotate(-45deg);
+  /* restores normal orientation */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.IO-node {
+  font-size: 12px;
+  width: 120px;
+  padding: 10px;
+  height: 20px;
+  background: white;
+  clip-path: polygon(10% 0%,
+      /* top-left */
+      100% 0%,
+      /* top-right */
+      90% 100%,
+      /* bottom-right */
+      0% 100%
+      /* bottom-left */
+    );
+  text-align: center;
+}
