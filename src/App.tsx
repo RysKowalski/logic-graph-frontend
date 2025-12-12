@@ -23,4 +23,14 @@ function App() {
   );
 }
 
-export default App;
+type ButtonProps = {
+  tekst: string;
+}
+
+function TTTButton({ tekst }: ButtonProps) {
+  return (
+    <button onClick={alert("t")}>{tekst}</button>
+  );
+}
+
+export default TTTButton;

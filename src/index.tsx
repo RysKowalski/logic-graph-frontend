@@ -1,17 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import TTTButton from './App';
 import reportWebVitals from './reportWebVitals';
-import logo from './logo.svg'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
-    <img src={logo} />
+    <TTTButton tekst='test tekkst' />
   </React.StrictMode>
 );
 
