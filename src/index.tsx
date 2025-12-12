@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <TTTButton tekst='test tekkst' />
+    <TTTButton tekst='test tekkst' onClick={(): void => { alert("test1"); alert("test2") }} />
   </React.StrictMode>
 );
 

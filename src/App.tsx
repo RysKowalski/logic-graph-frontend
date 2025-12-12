@@ -25,11 +25,13 @@ function App() {
 
 type ButtonProps = {
   tekst: string;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  alertTekst?: string;
 }
 
-function TTTButton({ tekst }: ButtonProps) {
+function TTTButton({ tekst, onClick }: ButtonProps) {
   return (
-    <button onClick={alert("t")}>{tekst}</button>
+    <button className='TTTButton' onClick={onClick}>{tekst}</button>
   );
 }
 
