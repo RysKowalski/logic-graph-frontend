@@ -9,13 +9,9 @@ export default function IFNode(props: NodeProps) {
       <div className="IF-node">
         <label htmlFor="tekst">Test IO</label>
       </div>
-      <div style={topHandleStyle}>
-        <Handle type="source" position={Position.Top} style={topHandleStyle} />
-      </div>
-      <div style={rightHandleStyle}>
-        <Handle type="target" position={Position.Right} style={rightHandleStyle} />
-      </div>
-      <Handle type="target" position={Position.Left} style={leftHandleStyle} />
+      <Handle type="source" position={Position.Top} style={topHandleStyle} id="input" />
+      <Handle type="target" position={Position.Right} style={rightHandleStyle} id="False" />
+      <Handle type="target" position={Position.Left} style={leftHandleStyle} id="True" />
     </div>
   )
 }
