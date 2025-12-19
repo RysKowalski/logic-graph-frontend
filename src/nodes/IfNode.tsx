@@ -7,7 +7,9 @@ export default function IFNode(props: NodeProps) {
   return (
     <div className="IF-node-wrapper">
       <div className="IF-node">
-        <label htmlFor="tekst">Test IO</label>
+        <label htmlFor="text">F</label>
+        <input id="expression" name="expression" className="nodrag" />
+        <label htmlFor="text">T</label>
       </div>
       <Handle type="source" position={Position.Top} style={topHandleStyle} id="input" />
       <Handle type="target" position={Position.Right} style={rightHandleStyle} id="False" />

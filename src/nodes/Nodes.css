@@ -20,13 +20,23 @@
 }
 
 .IF-node {
-  width: 80px;
-  height: 80px;
+  width: 100%;
+  height: 100%;
   transform: rotate(-45deg);
   /* restores normal orientation */
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+
+.IF-node input {
+  text-align: center;
+  width: 95%
+}
+
+.IF-node label {
+  padding: 2px;
 }
 
 
