@@ -24,7 +24,7 @@ import ReferenceNode from './nodes/ReferenceNode'
 const initialNodes: Node[] = [
   { id: 'start', position: { x: 0, y: 0 }, data: { label: 'Start' }, type: "input", className: 'start-stop' },
   { id: 'stop', position: { x: 0, y: 50 }, data: { label: 'Stop' }, type: "output", className: 'start-stop' },
-  { id: 'Reference', position: { x: 0, y: 100 }, data: {}, type: "ReferenceNode", className: 'reference-node' },
+  { id: 'Reference', position: { x: 0, y: 100 }, data: {}, type: "ReferenceNode" },
   { id: 'IONode', position: { x: 0, y: 150 }, data: {}, type: "IONode" },
   { id: 'IFNode', position: { x: 0, y: 200 }, data: {}, type: "IFNode" }
 ];

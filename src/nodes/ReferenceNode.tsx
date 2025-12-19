@@ -2,7 +2,7 @@ import { NodeProps } from "@xyflow/react";
 
 export default function ReferenceNode(props: NodeProps) {
   return (
-    <div>
+    <div className="reference-node">
       <input />
     </div>
   )
