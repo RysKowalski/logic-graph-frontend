@@ -1,4 +1,3 @@
-import React, { ChangeEventHandler } from 'react';
 import { useState, useCallback } from 'react';
 import "./App.css"
 import {
@@ -13,32 +12,11 @@ import {
   type Connection,
   Controls,
   Background,
-  NodeProps,
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 import './nodes/Nodes.css'
-import IONode from './nodes/IONode';
-import IFNode from './nodes/IfNode';
-import ReferenceNode from './nodes/ReferenceNode'
+import { initialNodes, initialEdges, nodeTypes } from './nodes/Nodes'
 
-const initialNodes: Node[] = [
-  { id: 'start', position: { x: 0, y: 0 }, data: { label: 'Start' }, type: "input", className: 'start-stop' },
-  { id: 'stop', position: { x: 0, y: 50 }, data: { label: 'Stop' }, type: "output", className: 'start-stop' },
-  { id: 'Reference', position: { x: 0, y: 100 }, data: {}, type: "ReferenceNode" },
-  { id: 'IONode', position: { x: 0, y: 150 }, data: {}, type: "IONode" },
-  { id: 'IFNode', position: { x: 0, y: 200 }, data: {}, type: "IFNode" }
-];
-
-const initialEdges: Edge[] = [
-  { id: 'start-stop', source: 'start', target: 'stop' },
-];
-
-
-const nodeTypes = {
-  IONode: IONode,
-  IFNode: IFNode,
-  ReferenceNode: ReferenceNode,
-}
 
 export default function App(): React.ReactElement {
   const [nodes, setNodes] = useState<Node[]>(initialNodes);
