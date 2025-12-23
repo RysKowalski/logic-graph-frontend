@@ -43,8 +43,11 @@
 
 .IF-node input {
   text-align: center;
-  width: 95%
+  width: 95%;
+  appearance: none;
+  border: 1px solid black;
 }
+
 
 .IF-node label {
   padding: 2px;
@@ -53,9 +56,9 @@
 
 .IO-node {
   font-size: 12px;
-  width: 120px;
   padding: 10px;
-  height: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
   background: #F7F7F7;
   clip-path: polygon(10% 0%,
       /* top-left */
@@ -66,5 +69,26 @@
       0% 100%
       /* bottom-left */
     );
+  text-align: center;
+  display: flex;
+}
+
+.IO-node select {
+  appearance: none;
+  border: 1px solid black;
+  padding: 2px;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin: 3px;
+}
+
+.IO-node input {
+  width: 50px;
+  appearance: none;
+  border: 1px solid black;
+  padding: 2px;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin: 3px;
   text-align: center;
 }

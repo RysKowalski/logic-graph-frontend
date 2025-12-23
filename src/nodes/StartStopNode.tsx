@@ -5,11 +5,11 @@ export default function StartStopNode(props: NodeProps) {
   let handleType: "source" | "target"
   let nodeType: "Start" | "Stop"
   if (props.type === "StartNode") {
-    position = Position.Top
+    position = Position.Bottom
     handleType = "source"
     nodeType = "Start"
   } else {
-    position = Position.Bottom
+    position = Position.Top
     handleType = "target"
     nodeType = "Stop"
   }

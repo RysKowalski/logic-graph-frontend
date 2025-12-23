@@ -11,9 +11,9 @@ export default function IFNode(props: NodeProps) {
         <input id="expression" name="expression" />
         <label htmlFor="text">T</label>
       </div>
-      <Handle type="source" position={Position.Top} style={topHandleStyle} id="input" />
-      <Handle type="target" position={Position.Right} style={rightHandleStyle} id="False" />
-      <Handle type="target" position={Position.Left} style={leftHandleStyle} id="True" />
+      <Handle type="target" position={Position.Top} style={topHandleStyle} id="input" />
+      <Handle type="source" position={Position.Right} style={rightHandleStyle} id="False" />
+      <Handle type="source" position={Position.Left} style={leftHandleStyle} id="True" />
     </div>
   )
 }

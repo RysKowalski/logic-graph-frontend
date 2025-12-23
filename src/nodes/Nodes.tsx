@@ -7,6 +7,15 @@ import IFNode from './IfNode';
 import ReferenceNode from './ReferenceNode'
 import StartStopNode from './StartStopNode';
 
+export const nodeTypes = {
+  StartNode: StartStopNode,
+  StopNode: StartStopNode,
+  IONode: IONode,
+  IFNode: IFNode,
+  ReferenceNodeIn: ReferenceNode,
+  ReferenceNodeOut: ReferenceNode,
+}
+
 export const initialNodes = [
   { id: 'start', position: { x: 0, y: 0 }, data: {}, type: "StartNode" },
   { id: 'stop', position: { x: 0, y: 50 }, data: {}, type: "StopNode" },
@@ -20,11 +29,3 @@ export const initialEdges: Edge[] = [
   { id: 'start-stop', source: 'start', target: 'stop' },
 ];
 
-export const nodeTypes = {
-  StartNode: StartStopNode,
-  StopNode: StartStopNode,
-  IONode: IONode,
-  IFNode: IFNode,
-  ReferenceNodeIn: ReferenceNode,
-  ReferenceNodeOut: ReferenceNode,
-}

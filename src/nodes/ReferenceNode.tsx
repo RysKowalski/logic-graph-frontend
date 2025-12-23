@@ -7,10 +7,10 @@ export default function ReferenceNode(props: NodeProps<ReferenceNode>) {
   let handleType: "source" | "target"
   if (props.type === "ReferenceNodeIn") {
     position = Position.Top
-    handleType = "source"
+    handleType = "target"
   } else {
     position = Position.Bottom
-    handleType = "target"
+    handleType = "source"
   }
   return (
     <div>
