@@ -4,7 +4,7 @@ import AutoResizableInput from "../AutoResizableInput";
 export default function OperationNode(props: NodeProps) {
   return (
     <div className="operation-node">
-      <AutoResizableInput />
+      <AutoResizableInput placeholder="i++" minLength={100} />
       <Handle type="target" position={Position.Top} />
       <Handle type="source" position={Position.Bottom} />
     </div>

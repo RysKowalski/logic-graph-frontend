@@ -1,5 +1,7 @@
 import { useState } from "react"
 import { Handle, NodeProps, Position } from "@xyflow/react";
+import AutoResizableInput from "../AutoResizableInput";
+
 
 export default function IONode(props: NodeProps) {
   const [operation, setOperation] = useState<"load" | "write">("load")
@@ -42,11 +44,11 @@ export default function IONode(props: NodeProps) {
           {OperationContent(operation)}
         </div>
 
-        <input id="textData" placeholder="var/text" />
+        <AutoResizableInput id="textData" placeholder="var/text" minLength={100} visualizeSpaces={true} />
 
+        <Handle type="target" position={Position.Top} />
+        <Handle type="source" position={Position.Bottom} />
       </div>
-      <Handle type="target" position={Position.Top} />
-      <Handle type="source" position={Position.Bottom} />
     </div>
   )
 }
