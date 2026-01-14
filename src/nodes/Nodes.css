@@ -107,3 +107,16 @@
   margin: 3px;
   text-align: center;
 }
+
+
+.join-node {
+  background-color: gray;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
