@@ -1,6 +1,7 @@
 import { useState } from "react"
-import { Handle, NodeProps, Position } from "@xyflow/react";
+import { NodeProps, Position } from "@xyflow/react";
 import AutoResizableInput from "../AutoResizableInput";
+import HandleConnLimit from "./HandleConnLimit";
 
 
 export default function IONode(props: NodeProps) {
@@ -46,8 +47,8 @@ export default function IONode(props: NodeProps) {
 
         <AutoResizableInput id="textData" placeholder="var/text" minLength={100} visualizeSpaces={true} />
 
-        <Handle type="target" position={Position.Top} />
-        <Handle type="source" position={Position.Bottom} />
+        <HandleConnLimit type="target" position={Position.Top} />
+        <HandleConnLimit type="source" position={Position.Bottom} />
       </div>
     </div>
   )

@@ -1,4 +1,5 @@
-import { Handle, Node, NodeProps, Position } from "@xyflow/react";
+import { Node, NodeProps, Position } from "@xyflow/react";
+import HandleConnLimit from "./HandleConnLimit";
 
 
 export type ReferenceNode = Node<{ name?: string }>
@@ -14,7 +15,7 @@ export default function ReferenceNode(props: NodeProps<ReferenceNode>) {
   }
   return (
     <div>
-      <Handle type={handleType} position={position} />
+      <HandleConnLimit type={handleType} position={position} />
       <div className="reference-node">
         <label htmlFor="text">{props.data.name}</label>
       </div></div>

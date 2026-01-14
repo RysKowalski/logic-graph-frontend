@@ -1,4 +1,5 @@
-import { Handle, NodeProps, Position } from "@xyflow/react";
+import { NodeProps, Position } from "@xyflow/react";
+import HandleConnLimit from "./HandleConnLimit";
 
 export default function StartStopNode(props: NodeProps) {
   let position: Position
@@ -15,7 +16,7 @@ export default function StartStopNode(props: NodeProps) {
   }
   return (
     <div className="start-stop">
-      <Handle type={handleType} position={position} />
+      <HandleConnLimit type={handleType} position={position} />
       <label htmlFor="text">{nodeType}</label>
     </div>
   )

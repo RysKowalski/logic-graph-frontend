@@ -1,12 +1,13 @@
-import { Handle, Node, NodeProps, Position } from "@xyflow/react";
+import { Node, NodeProps, Position } from "@xyflow/react";
 import AutoResizableInput from "../AutoResizableInput";
+import HandleConnLimit from "./HandleConnLimit";
 
 export default function OperationNode(props: NodeProps) {
   return (
     <div className="operation-node">
       <AutoResizableInput placeholder="i++" minLength={100} />
-      <Handle type="target" position={Position.Top} />
-      <Handle type="source" position={Position.Bottom} />
+      <HandleConnLimit type="target" position={Position.Top} />
+      <HandleConnLimit type="source" position={Position.Bottom} />
     </div>
   )
 }
