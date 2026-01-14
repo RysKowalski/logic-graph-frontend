@@ -7,6 +7,7 @@ import IFNode from './IfNode';
 import ReferenceNode from './ReferenceNode';
 import StartStopNode from './StartStopNode';
 import OperationNode from './OperationsNode';
+import JoinNode from './JoinNode';
 
 export const nodeTypes = {
   StartNode: StartStopNode,
@@ -15,7 +16,8 @@ export const nodeTypes = {
   IFNode: IFNode,
   ReferenceNodeIn: ReferenceNode,
   ReferenceNodeOut: ReferenceNode,
-  OperationNode: OperationNode
+  OperationNode: OperationNode,
+  JoinNode: JoinNode,
 }
 
 export const initialNodes = [
@@ -25,7 +27,8 @@ export const initialNodes = [
   { id: 'ReferenceOut', position: { x: 40, y: 100 }, data: { name: "1" }, type: "ReferenceNodeOut" },
   { id: 'IONode', position: { x: 0, y: 150 }, data: {}, type: "IONode" },
   { id: 'IFNode', position: { x: 0, y: 230 }, data: {}, type: "IFNode" },
-  { id: 'OperationNode', position: { x: 0, y: 260 }, data: {}, type: "OperationNode" }
+  { id: 'OperationNode', position: { x: 0, y: 260 }, data: {}, type: "OperationNode" },
+  { id: 'JoinNode', position: { x: 0, y: 300 }, data: {}, type: "JoinNode" }
 ];
 
 export const initialEdges: Edge[] = [
