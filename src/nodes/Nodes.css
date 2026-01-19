@@ -95,6 +95,7 @@
 .operation-node {
   background-color: white;
   padding: 5px;
+  border: 1px solid black;
 }
 
 .operation-node input {

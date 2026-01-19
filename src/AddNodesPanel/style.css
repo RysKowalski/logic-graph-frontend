@@ -1,0 +1,8 @@
+#add-nodes-panel {
+  background-color: white;
+  padding: 5px;
+}
+
+#add-nodes-panel details[open] {
+  animation: animateDown 0.2s linear forwards;
+}

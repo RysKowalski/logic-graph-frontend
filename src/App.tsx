@@ -12,10 +12,13 @@ import {
   type Connection,
   Controls,
   Background,
+  Panel,
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 import './nodes/Nodes.css'
 import { initialNodes, initialEdges, nodeTypes } from './nodes/Nodes'
+import AddNodesPanel from './AddNodesPanel/AddNodesPanel';
+import './AddNodesPanel/style.css'
 
 
 export default function App(): React.ReactElement {
@@ -54,6 +57,7 @@ export default function App(): React.ReactElement {
       >
         <Background />
         <Controls />
+        <AddNodesPanel />
       </ReactFlow>
     </div>
   );

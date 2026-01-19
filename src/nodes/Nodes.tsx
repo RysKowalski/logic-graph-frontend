@@ -18,7 +18,7 @@ export const nodeTypes = {
   ReferenceNodeOut: ReferenceNode,
   OperationNode: OperationNode,
   JoinNode: JoinNode,
-}
+} as const;
 
 export const initialNodes = [
   { id: 'start', position: { x: 0, y: 0 }, data: {}, type: "StartNode" },
